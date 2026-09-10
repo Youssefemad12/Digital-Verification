@@ -1,0 +1,782 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /axi_tb/dut/mem_inst
+=== Design Unit: work.axi_memory
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         5         5         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /axi_tb/dut/mem_inst
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+------------------------------------IF Branch------------------------------------
+    24                                    978296     Count coming in to IF
+    24              1                          2     
+    26              1                     649051     
+                                          329243     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                    649051     Count coming in to IF
+    27              1                     322420     
+    29              1                     326631     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /axi_tb/dut/mem_inst --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi_memory.v
+    23              1                     978296     
+    25              1                          2     
+    28              1                     322420     
+    30              1                     326631     
+    36              1                          1     
+    36              2                       1024     
+    37              1                       1024     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        154       154         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /axi_tb/dut/mem_inst --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =         77 
+Toggled Node Count   =         77 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (154 of 154 bins)
+
+=================================================================================
+=== Instance: /axi_tb/dut
+=== Design Unit: work.axi4
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        30        30         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /axi_tb/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.v
+------------------------------------IF Branch------------------------------------
+    104                                  1571243     Count coming in to IF
+    104             1                          3     
+    137             1                    1571240     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    145                                  1571240     Count coming in to CASE
+    146             1                    1176735     
+    163             1                       3000     
+    169             1                     388505     
+    200             1                       3000     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    151                                  1176735     Count coming in to IF
+    151             1                       3000     
+                                         1173735     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    172                                   388505     Count coming in to IF
+    172             1                     322420     
+                                           66085     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    181                                   388505     Count coming in to IF
+    181             1                       3000     
+    192             1                     385505     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    186                                     3000     Count coming in to IF
+    186             1                        389     
+    188             1                       2611     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    214                                  1571240     Count coming in to CASE
+    215             1                     412505     
+    232             1                       3000     
+    240             1                     385245     
+    243             1                     770490     
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    220                                   412505     Count coming in to IF
+    220             1                       3000     
+                                          409505     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    234                                     3000     Count coming in to IF
+    234             1                       2642     
+                                             358     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    245                                   770490     Count coming in to IF
+    245             1                     653262     
+    248             1                     117228     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    256                                   770490     Count coming in to IF
+    256             1                     385245     
+                                          385245     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    259                                   385245     Count coming in to IF
+    259             1                     382245     
+    271             1                       3000     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    265                                   382245     Count coming in to IF
+    265             1                     323989     
+                                           58256     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       7         7         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /axi_tb/dut --
+
+  File axi4.v
+----------------Focused Condition View-------------------
+Line       172 Item    1  (write_addr_valid && ~write_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       245 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       259 Item    1  (read_burst_cnt > 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       265 Item    1  (read_addr_valid && ~read_boundary_cross)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      5         5         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /axi_tb/dut --
+
+  File axi4.v
+----------------Focused Expression View-----------------
+Line       64 Item    1  (((write_addr & 4095) + (write_burst_cnt << write_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       65 Item    1  (((read_addr & 4095) + (read_burst_cnt << read_size)) > 4095)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       69 Item    1  ((write_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       70 Item    1  ((read_addr >> 2) < 1024)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       254 Item    1  (read_burst_cnt == 0)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       8         8         0   100.00%
+    FSM Transitions                  9         9         0   100.00%
+
+================================FSM Details================================
+
+FSM Coverage for instance /axi_tb/dut --
+
+FSM_ID: write_state
+    Current State Object : write_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 146              W_IDLE                   0
+ 163              W_ADDR                   1
+ 169              W_DATA                   2
+ 200              W_RESP                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  W_IDLE                3003          
+                  W_ADDR                3000          
+                  W_DATA                3000          
+                  W_RESP                3000          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 159                   0                3000          W_IDLE -> W_ADDR              
+ 166                   1                3000          W_ADDR -> W_DATA              
+ 183                   3                3000          W_DATA -> W_RESP              
+ 204                   5                3000          W_RESP -> W_IDLE              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              4         4         0   100.00%
+FSM_ID: read_state
+    Current State Object : read_state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+ 215              R_IDLE                   0
+ 232              R_ADDR                   1
+ 240              R_WAIT                   2
+ 243              R_DATA                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  R_IDLE                3003          
+                  R_ADDR                3000          
+                  R_WAIT              385245          
+                  R_DATA              385245          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 228                   0                3000          R_IDLE -> R_ADDR              
+ 238                   1                3000          R_ADDR -> R_WAIT              
+ 241                   3              385245          R_WAIT -> R_DATA              
+ 274                   5                3000          R_DATA -> R_IDLE              
+ 269                   6              382245          R_DATA -> R_WAIT              
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              5         5         0   100.00%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      85        85         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /axi_tb/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File axi4.v
+    60              1                          3     
+    61              1                          3     
+    64              1                     388507     
+    65              1                     385247     
+    69              1                     388503     
+    70              1                     385245     
+    103             1                    1571243     
+    106             1                          3     
+    107             1                          3     
+    108             1                          3     
+    109             1                          3     
+    111             1                          3     
+    112             1                          3     
+    113             1                          3     
+    114             1                          3     
+    115             1                          3     
+    118             1                          3     
+    119             1                          3     
+    120             1                          3     
+    121             1                          3     
+    122             1                          3     
+    123             1                          3     
+    126             1                          3     
+    127             1                          3     
+    128             1                          3     
+    129             1                          3     
+    130             1                          3     
+    131             1                          3     
+    132             1                          3     
+    133             1                          3     
+    135             1                          3     
+    139             1                    1571240     
+    140             1                    1571240     
+    147             1                    1176735     
+    148             1                    1176735     
+    149             1                    1176735     
+    153             1                       3000     
+    154             1                       3000     
+    155             1                       3000     
+    156             1                       3000     
+    158             1                       3000     
+    159             1                       3000     
+    165             1                       3000     
+    166             1                       3000     
+    174             1                     322420     
+    175             1                     322420     
+    176             1                     322420     
+    177             1                     322420     
+    182             1                       3000     
+    183             1                       3000     
+    187             1                        389     
+    189             1                       2611     
+    191             1                       3000     
+    194             1                     385505     
+    195             1                     385505     
+    202             1                       3000     
+    203             1                       3000     
+    204             1                       3000     
+    216             1                     412505     
+    217             1                     412505     
+    218             1                     412505     
+    222             1                       3000     
+    223             1                       3000     
+    224             1                       3000     
+    225             1                       3000     
+    227             1                       3000     
+    228             1                       3000     
+    235             1                       2642     
+    236             1                       2642     
+    238             1                       3000     
+    241             1                     385245     
+    246             1                     653262     
+    247             1                     653262     
+    249             1                     117228     
+    250             1                     117228     
+    253             1                     770490     
+    254             1                     770490     
+    257             1                     385245     
+    261             1                     382245     
+    262             1                     382245     
+    266             1                     323989     
+    267             1                     323989     
+    269             1                     382245     
+    273             1                       3000     
+    274             1                       3000     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        474       474         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /axi_tb/dut --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+
+Total Node Count     =        237 
+Toggled Node Count   =        237 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (474 of 474 bins)
+
+=================================================================================
+=== Instance: /signals_pkg
+=== Design Unit: work.signals_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses         11        na        na        na
+            Covergroup Bins        120       120         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /signals_pkg/signals/cg                         100.00%        100          -    Covered              
+    covered/total bins:                                   120        120          -                      
+    missing/total bins:                                     0        120          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint c_AWADDR                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                          50955          1          -    Covered              
+        bin b2                                          45789          1          -    Covered              
+        bin b3                                          48058          1          -    Covered              
+        bin b4                                          46790          1          -    Covered              
+        bin b5                                          47981          1          -    Covered              
+        bin b6                                          49400          1          -    Covered              
+        bin b7                                          54299          1          -    Covered              
+        bin b8                                          48233          1          -    Covered              
+    Coverpoint c_ARADDR                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                            358          1          -    Covered              
+        bin b2                                            379          1          -    Covered              
+        bin b3                                            369          1          -    Covered              
+        bin b4                                            384          1          -    Covered              
+        bin b5                                            378          1          -    Covered              
+        bin b6                                            360          1          -    Covered              
+        bin b7                                            408          1          -    Covered              
+        bin b8                                            364          1          -    Covered              
+    Coverpoint c_AWLEN                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b0                                             26          1          -    Covered              
+        bin b1                                          23756          1          -    Covered              
+        bin b2                                          73338          1          -    Covered              
+        bin b3                                         118839          1          -    Covered              
+        bin b4                                         175546          1          -    Covered              
+    Coverpoint c_ARLEN                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b0                                             16          1          -    Covered              
+        bin b1                                            746          1          -    Covered              
+        bin b2                                            714          1          -    Covered              
+        bin b3                                            793          1          -    Covered              
+        bin b4                                            731          1          -    Covered              
+    Coverpoint c_WDATA                                100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                          54600          1          -    Covered              
+        bin b2                                          48475          1          -    Covered              
+        bin b3                                          48433          1          -    Covered              
+        bin b4                                          48505          1          -    Covered              
+        bin b5                                          49094          1          -    Covered              
+        bin b6                                          48266          1          -    Covered              
+        bin b7                                          48570          1          -    Covered              
+        bin b8                                          48562          1          -    Covered              
+    Coverpoint c_BRESP                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                           2611          1          -    Covered              
+        bin b2                                            389          1          -    Covered              
+    Coverpoint c_RRESP                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                           2642          1          -    Covered              
+        bin b2                                            358          1          -    Covered              
+    Coverpoint c_AWSIZE                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                         391505          1          -    Covered              
+    Coverpoint c_ARSIZE                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                           3000          1          -    Covered              
+    Cross croos_wire_add_len                          100.00%        100          -    Covered              
+        covered/total bins:                                40         40          -                      
+        missing/total bins:                                 0         40          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <b8,b4>                                 18961          1          -    Covered              
+            bin <b7,b4>                                 25497          1          -    Covered              
+            bin <b6,b4>                                 22451          1          -    Covered              
+            bin <b5,b4>                                 23071          1          -    Covered              
+            bin <b4,b4>                                 20380          1          -    Covered              
+            bin <b3,b4>                                 21714          1          -    Covered              
+            bin <b2,b4>                                 20365          1          -    Covered              
+            bin <b1,b4>                                 23107          1          -    Covered              
+            bin <b8,b3>                                 16907          1          -    Covered              
+            bin <b7,b3>                                 16247          1          -    Covered              
+            bin <b6,b3>                                 15620          1          -    Covered              
+            bin <b5,b3>                                 13051          1          -    Covered              
+            bin <b4,b3>                                 14219          1          -    Covered              
+            bin <b3,b3>                                 14946          1          -    Covered              
+            bin <b2,b3>                                 12854          1          -    Covered              
+            bin <b1,b3>                                 14995          1          -    Covered              
+            bin <b8,b2>                                  9440          1          -    Covered              
+            bin <b7,b2>                                  9685          1          -    Covered              
+            bin <b6,b2>                                  8899          1          -    Covered              
+            bin <b5,b2>                                  8677          1          -    Covered              
+            bin <b4,b2>                                  9473          1          -    Covered              
+            bin <b3,b2>                                  8686          1          -    Covered              
+            bin <b2,b2>                                  8869          1          -    Covered              
+            bin <b1,b2>                                  9609          1          -    Covered              
+            bin <b8,b1>                                  2919          1          -    Covered              
+            bin <b7,b1>                                  2868          1          -    Covered              
+            bin <b6,b1>                                  2428          1          -    Covered              
+            bin <b5,b1>                                  3180          1          -    Covered              
+            bin <b4,b1>                                  2716          1          -    Covered              
+            bin <b3,b1>                                  2708          1          -    Covered              
+            bin <b2,b1>                                  3697          1          -    Covered              
+            bin <b1,b1>                                  3240          1          -    Covered              
+            bin <b8,b0>                                     6          1          -    Covered              
+            bin <b7,b0>                                     2          1          -    Covered              
+            bin <b6,b0>                                     2          1          -    Covered              
+            bin <b5,b0>                                     2          1          -    Covered              
+            bin <b4,b0>                                     2          1          -    Covered              
+            bin <b3,b0>                                     4          1          -    Covered              
+            bin <b2,b0>                                     4          1          -    Covered              
+            bin <b1,b0>                                     4          1          -    Covered              
+    Cross croos_read_add_len                          100.00%        100          -    Covered              
+        covered/total bins:                                40         40          -                      
+        missing/total bins:                                 0         40          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <b8,b4>                                    79          1          -    Covered              
+            bin <b7,b4>                                    86          1          -    Covered              
+            bin <b6,b4>                                    94          1          -    Covered              
+            bin <b5,b4>                                    91          1          -    Covered              
+            bin <b4,b4>                                    96          1          -    Covered              
+            bin <b3,b4>                                   105          1          -    Covered              
+            bin <b2,b4>                                    85          1          -    Covered              
+            bin <b1,b4>                                    95          1          -    Covered              
+            bin <b8,b3>                                    97          1          -    Covered              
+            bin <b7,b3>                                   119          1          -    Covered              
+            bin <b6,b3>                                    94          1          -    Covered              
+            bin <b5,b3>                                    92          1          -    Covered              
+            bin <b4,b3>                                    90          1          -    Covered              
+            bin <b3,b3>                                    95          1          -    Covered              
+            bin <b2,b3>                                   102          1          -    Covered              
+            bin <b1,b3>                                   104          1          -    Covered              
+            bin <b8,b2>                                    87          1          -    Covered              
+            bin <b7,b2>                                   100          1          -    Covered              
+            bin <b6,b2>                                    77          1          -    Covered              
+            bin <b5,b2>                                    96          1          -    Covered              
+            bin <b4,b2>                                    96          1          -    Covered              
+            bin <b3,b2>                                    89          1          -    Covered              
+            bin <b2,b2>                                    92          1          -    Covered              
+            bin <b1,b2>                                    77          1          -    Covered              
+            bin <b8,b1>                                    99          1          -    Covered              
+            bin <b7,b1>                                   101          1          -    Covered              
+            bin <b6,b1>                                    94          1          -    Covered              
+            bin <b5,b1>                                    97          1          -    Covered              
+            bin <b4,b1>                                    99          1          -    Covered              
+            bin <b3,b1>                                    78          1          -    Covered              
+            bin <b2,b1>                                    99          1          -    Covered              
+            bin <b1,b1>                                    79          1          -    Covered              
+            bin <b8,b0>                                     2          1          -    Covered              
+            bin <b7,b0>                                     2          1          -    Covered              
+            bin <b6,b0>                                     1          1          -    Covered              
+            bin <b5,b0>                                     2          1          -    Covered              
+            bin <b4,b0>                                     3          1          -    Covered              
+            bin <b3,b0>                                     2          1          -    Covered              
+            bin <b2,b0>                                     1          1          -    Covered              
+            bin <b1,b0>                                     3          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /signals_pkg/signals/cg                         100.00%        100          -    Covered              
+    covered/total bins:                                   120        120          -                      
+    missing/total bins:                                     0        120          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint c_AWADDR                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                          50955          1          -    Covered              
+        bin b2                                          45789          1          -    Covered              
+        bin b3                                          48058          1          -    Covered              
+        bin b4                                          46790          1          -    Covered              
+        bin b5                                          47981          1          -    Covered              
+        bin b6                                          49400          1          -    Covered              
+        bin b7                                          54299          1          -    Covered              
+        bin b8                                          48233          1          -    Covered              
+    Coverpoint c_ARADDR                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                            358          1          -    Covered              
+        bin b2                                            379          1          -    Covered              
+        bin b3                                            369          1          -    Covered              
+        bin b4                                            384          1          -    Covered              
+        bin b5                                            378          1          -    Covered              
+        bin b6                                            360          1          -    Covered              
+        bin b7                                            408          1          -    Covered              
+        bin b8                                            364          1          -    Covered              
+    Coverpoint c_AWLEN                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b0                                             26          1          -    Covered              
+        bin b1                                          23756          1          -    Covered              
+        bin b2                                          73338          1          -    Covered              
+        bin b3                                         118839          1          -    Covered              
+        bin b4                                         175546          1          -    Covered              
+    Coverpoint c_ARLEN                                100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b0                                             16          1          -    Covered              
+        bin b1                                            746          1          -    Covered              
+        bin b2                                            714          1          -    Covered              
+        bin b3                                            793          1          -    Covered              
+        bin b4                                            731          1          -    Covered              
+    Coverpoint c_WDATA                                100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                          54600          1          -    Covered              
+        bin b2                                          48475          1          -    Covered              
+        bin b3                                          48433          1          -    Covered              
+        bin b4                                          48505          1          -    Covered              
+        bin b5                                          49094          1          -    Covered              
+        bin b6                                          48266          1          -    Covered              
+        bin b7                                          48570          1          -    Covered              
+        bin b8                                          48562          1          -    Covered              
+    Coverpoint c_BRESP                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                           2611          1          -    Covered              
+        bin b2                                            389          1          -    Covered              
+    Coverpoint c_RRESP                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                           2642          1          -    Covered              
+        bin b2                                            358          1          -    Covered              
+    Coverpoint c_AWSIZE                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                         391505          1          -    Covered              
+    Coverpoint c_ARSIZE                               100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin b1                                           3000          1          -    Covered              
+    Cross croos_wire_add_len                          100.00%        100          -    Covered              
+        covered/total bins:                                40         40          -                      
+        missing/total bins:                                 0         40          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <b8,b4>                                 18961          1          -    Covered              
+            bin <b7,b4>                                 25497          1          -    Covered              
+            bin <b6,b4>                                 22451          1          -    Covered              
+            bin <b5,b4>                                 23071          1          -    Covered              
+            bin <b4,b4>                                 20380          1          -    Covered              
+            bin <b3,b4>                                 21714          1          -    Covered              
+            bin <b2,b4>                                 20365          1          -    Covered              
+            bin <b1,b4>                                 23107          1          -    Covered              
+            bin <b8,b3>                                 16907          1          -    Covered              
+            bin <b7,b3>                                 16247          1          -    Covered              
+            bin <b6,b3>                                 15620          1          -    Covered              
+            bin <b5,b3>                                 13051          1          -    Covered              
+            bin <b4,b3>                                 14219          1          -    Covered              
+            bin <b3,b3>                                 14946          1          -    Covered              
+            bin <b2,b3>                                 12854          1          -    Covered              
+            bin <b1,b3>                                 14995          1          -    Covered              
+            bin <b8,b2>                                  9440          1          -    Covered              
+            bin <b7,b2>                                  9685          1          -    Covered              
+            bin <b6,b2>                                  8899          1          -    Covered              
+            bin <b5,b2>                                  8677          1          -    Covered              
+            bin <b4,b2>                                  9473          1          -    Covered              
+            bin <b3,b2>                                  8686          1          -    Covered              
+            bin <b2,b2>                                  8869          1          -    Covered              
+            bin <b1,b2>                                  9609          1          -    Covered              
+            bin <b8,b1>                                  2919          1          -    Covered              
+            bin <b7,b1>                                  2868          1          -    Covered              
+            bin <b6,b1>                                  2428          1          -    Covered              
+            bin <b5,b1>                                  3180          1          -    Covered              
+            bin <b4,b1>                                  2716          1          -    Covered              
+            bin <b3,b1>                                  2708          1          -    Covered              
+            bin <b2,b1>                                  3697          1          -    Covered              
+            bin <b1,b1>                                  3240          1          -    Covered              
+            bin <b8,b0>                                     6          1          -    Covered              
+            bin <b7,b0>                                     2          1          -    Covered              
+            bin <b6,b0>                                     2          1          -    Covered              
+            bin <b5,b0>                                     2          1          -    Covered              
+            bin <b4,b0>                                     2          1          -    Covered              
+            bin <b3,b0>                                     4          1          -    Covered              
+            bin <b2,b0>                                     4          1          -    Covered              
+            bin <b1,b0>                                     4          1          -    Covered              
+    Cross croos_read_add_len                          100.00%        100          -    Covered              
+        covered/total bins:                                40         40          -                      
+        missing/total bins:                                 0         40          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <b8,b4>                                    79          1          -    Covered              
+            bin <b7,b4>                                    86          1          -    Covered              
+            bin <b6,b4>                                    94          1          -    Covered              
+            bin <b5,b4>                                    91          1          -    Covered              
+            bin <b4,b4>                                    96          1          -    Covered              
+            bin <b3,b4>                                   105          1          -    Covered              
+            bin <b2,b4>                                    85          1          -    Covered              
+            bin <b1,b4>                                    95          1          -    Covered              
+            bin <b8,b3>                                    97          1          -    Covered              
+            bin <b7,b3>                                   119          1          -    Covered              
+            bin <b6,b3>                                    94          1          -    Covered              
+            bin <b5,b3>                                    92          1          -    Covered              
+            bin <b4,b3>                                    90          1          -    Covered              
+            bin <b3,b3>                                    95          1          -    Covered              
+            bin <b2,b3>                                   102          1          -    Covered              
+            bin <b1,b3>                                   104          1          -    Covered              
+            bin <b8,b2>                                    87          1          -    Covered              
+            bin <b7,b2>                                   100          1          -    Covered              
+            bin <b6,b2>                                    77          1          -    Covered              
+            bin <b5,b2>                                    96          1          -    Covered              
+            bin <b4,b2>                                    96          1          -    Covered              
+            bin <b3,b2>                                    89          1          -    Covered              
+            bin <b2,b2>                                    92          1          -    Covered              
+            bin <b1,b2>                                    77          1          -    Covered              
+            bin <b8,b1>                                    99          1          -    Covered              
+            bin <b7,b1>                                   101          1          -    Covered              
+            bin <b6,b1>                                    94          1          -    Covered              
+            bin <b5,b1>                                    97          1          -    Covered              
+            bin <b4,b1>                                    99          1          -    Covered              
+            bin <b3,b1>                                    78          1          -    Covered              
+            bin <b2,b1>                                    99          1          -    Covered              
+            bin <b1,b1>                                    79          1          -    Covered              
+            bin <b8,b0>                                     2          1          -    Covered              
+            bin <b7,b0>                                     2          1          -    Covered              
+            bin <b6,b0>                                     1          1          -    Covered              
+            bin <b5,b0>                                     2          1          -    Covered              
+            bin <b4,b0>                                     3          1          -    Covered              
+            bin <b3,b0>                                     2          1          -    Covered              
+            bin <b2,b0>                                     1          1          -    Covered              
+            bin <b1,b0>                                     3          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+
