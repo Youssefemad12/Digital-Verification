@@ -1,8 +1,0 @@
-vlog *.v +cover -covercells
-vlog interface.sv signal.sv generator.sv driver.sv monitor.sv scoreboard.sv enviroment.sv  axi_tb.sv +cover=f -covercells
-vsim -voptargs=+acc work.axi_tb -cover
-do exclude.do
-coverage save -onexit cov.ucdb
-do wave.do
-run -all
-coverage report -details -output cov_report.txt
