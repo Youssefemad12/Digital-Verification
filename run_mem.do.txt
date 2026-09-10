@@ -1,6 +1,0 @@
-vlog axi_memory.v memory_tb.sv
-vsim -voptargs=+acc work.memory_tb
-add wave *
-add wave -position insertpoint  \
-sim:/memory_tb/memory
-run -all
